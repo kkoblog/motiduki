@@ -32,7 +32,7 @@ export default function Home() {
                   />
                 </div>
                 <div className='relative bg-white text-gray-800 p-4 rounded-[2rem] rounded-bl-[1rem] before:absolute before:content-[none] before:w-6 before:h-6 before:bg-white before:rounded-full before:left-[-0.75rem] before:top-[40%] after:absolute after:content-[none] after:w-4 after:h-4 after:bg-white after:rounded-full after:left-[-1rem] after:top-[50%] shadow-lg'>
-                  <p className='text-sm leading-relaxed font-bold'>早くデビューしてスタートに立ちたいのに<br />3ヶ月以内のデビューは難しそう…</p>
+                  <p className='text-sm leading-relaxed font-bold'>早くデビューして<br />スタートに立ちたいのに、<br />3ヶ月以内のデビューは難しそう…</p>
                 </div>
               </div>
               
@@ -85,8 +85,11 @@ export default function Home() {
 
             {/* 呼びかけテキスト */}
             <div className='pt-6 pb-6 space-y-3'>
-            <p className='text-3xl font-bold leading-relaxed whitespace-nowrap'>あなたの理想の美容師人生、</p>
-              <p className='text-3xl font-bold leading-relaxed whitespace-nowrap'>一緒に叶えていきませんか？</p>
+               <div className='text-[26px] font-bold leading-relaxed text-left px-0'>
+                <p className='mb-2'>あなたの<br />理想の美容師人生、</p>
+                <p className='mb-0'>一緒に叶えていきませんか？</p>
+                
+              </div>
             </div>
           </div>
         </section>
@@ -108,9 +111,11 @@ export default function Home() {
           <div className='space-y-6'>
             {/* タイトル */}
             <div className='space-y-3'>
-              <h2 className='text-3xl font-black'>美容師の<span className='text-[#ff0059] font-black'>転職理由トップ3</span>を</h2>
-              <h2 className='text-3xl font-black'>充実の制度と</h2>
-              <h2 className='text-3xl font-black'>独自のカリキュラムで<span className='text-[#ff0059] font-black'>解消</span></h2>
+              <h2 className='text-4xl font-black'>美容師の</h2>
+              <h2 className='text-4xl font-black'><span className='text-[#ff0059] font-black'>転職理由トップ3</span>を</h2>
+              <h2 className='text-4xl font-black'>充実の制度と</h2>
+              <h2 className='text-4xl font-black'>独自のカリキュラム</h2>
+              <h2 className='text-4xl font-black'>で<span className='text-[#ff0059] font-black'>解消</span></h2>
             </div>
 
             {/* データバー */}
@@ -173,10 +178,13 @@ export default function Home() {
                 毎日が楽しい！
               </h2>
               <h2 className='text-4xl font-bold leading-tight'>
-                U-topiaが選ばれ続ける
+                U-topiaが
               </h2>
               <h2 className='text-4xl font-bold leading-tight'>
-                3つのワケ
+                選ばれ続ける
+              </h2>
+              <h2 className='text-4xl font-bold leading-tight'>
+                <span className='text-[#ff0059]'>3つ</span>のワケ
               </h2>
             </div>
 
@@ -245,7 +253,7 @@ export default function Home() {
                 <p className='text-2xl text-white font-black bg-gradient-to-r from-[#ff8c00] to-[#ffa500] p-4 shadow-lg border border-white/20 transform hover:scale-[1.02] transition-transform duration-200'>平均月収は40万円オーバー</p>
               </div>
               <div className='inline-block'>
-                <p className='text-2xl text-white font-black bg-gradient-to-r from-[#ff8c00] to-[#ffa500] p-4 shadow-lg border border-white/20 transform hover:scale-[1.02] transition-transform duration-200'>（新卒1年生も35万オーバー）</p>
+                <p className='text-1xl text-white font-black bg-gradient-to-r from-[#ff8c00] to-[#ffa500] p-4 shadow-lg border border-white/20 transform hover:scale-[1.02] transition-transform duration-200'>（新卒1年生も35万オーバー）</p>
               </div>
               <div className='inline-block'>
                 <p className='text-2xl text-white font-black bg-gradient-to-r from-[#ff8c00] to-[#ffa500] p-4 shadow-lg border border-white/20 transform hover:scale-[1.02] transition-transform duration-200'>業界トップクラスの歩合率で</p>
@@ -258,18 +266,18 @@ export default function Home() {
             {/* 歩合率情報 */}
             <div className='pt-8'>
               <p className='text-1xl font-black pb-4'>⚫︎正社員の歩合率</p>
-              <div className='grid grid-cols-3 gap-4'>
-                <div className='bg-gradient-to-br from-white to-white/95 p-4 rounded-2xl shadow-xl border border-white/30 backdrop-blur-sm transform hover:scale-[1.02] transition-all duration-300 text-center'>
-                  <p className='text-[#ff8c00] text-lg font-black tracking-wide'>指名</p>
-                  <p className='text-[#ff8c00] text-4xl font-black'>40%</p>
+              <div className='grid grid-cols-3 gap-2 md:gap-4'>
+                <div className='aspect-square bg-gradient-to-br from-white to-white/95 p-2 md:p-4 rounded-2xl shadow-xl border border-white/30 backdrop-blur-sm transform hover:scale-[1.02] transition-all duration-300 text-center flex flex-col justify-center'>
+                  <p className='text-[#ff8c00] text-sm md:text-lg font-black tracking-wide'>指名</p>
+                  <p className='text-[#ff8c00] text-3xl md:text-4xl font-black'>40%</p>
                 </div>
-                <div className='bg-gradient-to-br from-white to-white/95 p-4 rounded-2xl shadow-xl border border-white/30 backdrop-blur-sm transform hover:scale-[1.02] transition-all duration-300 text-center'>
-                  <p className='text-[#ff8c00] text-lg font-black tracking-wide'>フリー</p>
-                  <p className='text-[#ff8c00] text-4xl font-black'>30%</p>
+                <div className='aspect-square bg-gradient-to-br from-white to-white/95 p-2 md:p-4 rounded-2xl shadow-xl border border-white/30 backdrop-blur-sm transform hover:scale-[1.02] transition-all duration-300 text-center flex flex-col justify-center'>
+                  <p className='text-[#ff8c00] text-sm md:text-lg font-black tracking-wide'>フリー</p>
+                  <p className='text-[#ff8c00] text-3xl md:text-4xl font-black'>30%</p>
                 </div>
-                <div className='bg-gradient-to-br from-white to-white/95 p-4 rounded-2xl shadow-xl border border-white/30 backdrop-blur-sm transform hover:scale-[1.02] transition-all duration-300 text-center'>
-                  <p className='text-[#ff8c00] text-lg font-black tracking-wide'>店販歩合</p>
-                  <p className='text-[#ff8c00] text-4xl font-black'>10%</p>
+                <div className='aspect-square bg-gradient-to-br from-white to-white/95 p-2 md:p-4 rounded-2xl shadow-xl border border-white/30 backdrop-blur-sm transform hover:scale-[1.02] transition-all duration-300 text-center flex flex-col justify-center'>
+                  <p className='text-[#ff8c00] text-sm md:text-lg font-black tracking-wide'>店販歩合</p>
+                  <p className='text-[#ff8c00] text-3xl md:text-4xl font-black'>10%</p>
                 </div>
               </div>
             </div>
@@ -319,70 +327,68 @@ export default function Home() {
           <div className='space-y-6'>
             <h2 className='text-4xl font-bold'>数字で見るU-topia</h2>
             
-            <div className='grid grid-cols-2 gap-4'>
+              <div className='grid grid-cols-2 gap-2 md:gap-4'>
               {/* 平均年齢 */}
-              <div className='bg-white shadow p-6 flex flex-col items-center'>
-              <p className='text-gray-600 mb-2'>平均年齢</p>
+              <div className='bg-white shadow p-3 md:p-6 flex flex-col items-center aspect-square'>
+                <p className='text-gray-600 mb-2 text-sm md:text-base'>平均年齢</p>
                 <div className='flex-1 flex items-center justify-center'>
-                  <UserGroupIcon className='w-12 h-12 text-[#ffa500]' />
+                  <UserGroupIcon className='w-8 h-8 md:w-12 md:h-12 text-[#ffa500]' />
                 </div>
-                <p className='text-4xl font-bold text-center'>24.3<span className='text-2xl'>歳</span></p>
+                <p className='text-3xl md:text-4xl font-bold text-center whitespace-nowrap'>24.3<span className='text-2xl md:text-2xl'>歳</span></p>
               </div>
 
               {/* 平均月収 */}
-              <div className='bg-white shadow p-6 flex flex-col items-center'>
-                <p className='text-gray-600 mb-2'>平均月収</p>
-                <div className='h-24 flex items-center justify-center'>
-                  <CurrencyYenIcon className='w-12 h-12 text-[#ffa500]' />
+              <div className='bg-white shadow p-3 md:p-6 flex flex-col items-center aspect-square'>
+                <p className='text-gray-600 mb-2 text-sm md:text-base'>平均月収</p>
+                <div className='flex-1 flex items-center justify-center'>
+                  <CurrencyYenIcon className='w-8 h-8 md:w-12 md:h-12 text-[#ffa500]' />
                 </div>
-                <p className='text-4xl font-bold'>約40<span className='text-2xl'>万円</span></p>
-                
+                <p className='text-3xl md:text-4xl font-bold whitespace-nowrap'>約40<span className='text-2xl md:text-2xl'>万円</span></p>
               </div>
 
               {/* デビュー初月の売上平均 */}
-              <div className='bg-white shadow p-6 flex flex-col items-center'>
-                <p className='text-gray-600 mb-2'>デビュー初月の売上平均</p>
-                <div className='h-24 flex items-center justify-center'>
-                  <SparklesIcon className='w-12 h-12 text-[#ffa500]' />
+              <div className='bg-white shadow p-3 md:p-6 flex flex-col items-center aspect-square'>
+                <p className='text-gray-600 mb-2 text-sm md:text-base'>デビュー初月の売上平均</p>
+                <div className='flex-1 flex items-center justify-center'>
+                  <SparklesIcon className='w-8 h-8 md:w-12 md:h-12 text-[#ffa500]' />
                 </div>
-                <p className='text-4xl font-bold'>約62<span className='text-2xl'>万円</span></p>
+                <p className='text-3xl md:text-4xl font-bold whitespace-nowrap'>約62<span className='text-2xl md:text-2xl'>万円</span></p>
               </div>
 
               {/* デビューまでの平均期間 */}
-              <div className='bg-white shadow p-6 flex flex-col items-center'>
-                <p className='text-gray-600 mb-2'>デビューまでの平均期間</p>
-                <div className='h-24 flex items-center justify-center'>
-                  <CalendarIcon className='w-12 h-12 text-[#ffa500]' />
+              <div className='bg-white shadow p-3 md:p-6 flex flex-col items-center aspect-square'>
+                <p className='text-gray-600 mb-2 text-sm md:text-base'>デビューまでの平均期間</p>
+                <div className='flex-1 flex items-center justify-center'>
+                  <CalendarIcon className='w-8 h-8 md:w-12 md:h-12 text-[#ffa500]' />
                 </div>
-                <p className='text-4xl font-bold'>6.5<span className='text-2xl'>ヶ月</span></p>
+                <p className='text-3xl md:text-4xl font-bold whitespace-nowrap'>6.5<span className='text-2xl md:text-2xl'>ヶ月</span></p>
               </div>
 
               {/* デビュー月の平均新規入客数 */}
-              <div className='bg-white shadow p-6 flex flex-col items-center'>
-                <p className='text-gray-600 mb-2'>デビュー月の平均新規入客数</p>
-                <div className='h-24 flex items-center justify-center'>
-                  <UserIcon className='w-12 h-12 text-[#ffa500] stroke-2' />
+              <div className='bg-white shadow p-3 md:p-6 flex flex-col items-center aspect-square'>
+                <p className='text-gray-600 mb-2 text-sm md:text-base'>デビュー月の平均新規入客数</p>
+                <div className='flex-1 flex items-center justify-center'>
+                  <UserIcon className='w-8 h-8 md:w-12 md:h-12 text-[#ffa500] stroke-2' />
                 </div>
-                <p className='text-4xl font-bold'>74<span className='text-2xl'>名</span></p>
+                <p className='text-3xl md:text-4xl font-bold whitespace-nowrap'>74<span className='text-2xl md:text-2xl'>名</span></p>
               </div>
 
               {/* 有給取得率 */}
-              <div className='bg-white shadow p-6 flex flex-col items-center'>
-                <p className='text-gray-600 mb-2'>有給取得率</p>
-                <div className='h-24 flex items-center justify-center'>
-                  <BeakerIcon className='w-12 h-12 text-[#ffa500]' />
+              <div className='bg-white shadow p-3 md:p-6 flex flex-col items-center aspect-square'>
+                <p className='text-gray-600 mb-2 text-sm md:text-base'>有給取得率</p>
+                <div className='flex-1 flex items-center justify-center'>
+                  <BeakerIcon className='w-8 h-8 md:w-12 md:h-12 text-[#ffa500]' />
                 </div>
-                <p className='text-4xl font-bold'>100<span className='text-2xl'>%</span></p>
-              
+                <p className='text-3xl md:text-4xl font-bold whitespace-nowrap'>100<span className='text-2xl md:text-2xl'>%</span></p>
               </div>
 
               {/* 社内イベントの参加率 */}
-              <div className='bg-white shadow p-6 flex flex-col items-center'>
-                <p className='text-gray-600 mb-2'>社内イベントの参加率</p>
-                <div className='h-24 flex items-center justify-center'>
-                  <FaceSmileIcon className='w-12 h-12 text-[#ffa500]' />
+              <div className='bg-white shadow p-3 md:p-6 flex flex-col items-center aspect-square'>
+                <p className='text-gray-600 mb-2 text-sm md:text-base'>社内イベントの参加率</p>
+                <div className='flex-1 flex items-center justify-center'>
+                  <FaceSmileIcon className='w-8 h-8 md:w-12 md:h-12 text-[#ffa500]' />
                 </div>
-                <p className='text-4xl font-bold'>89.2<span className='text-2xl'>%</span></p>
+                <p className='text-3xl md:text-4xl font-bold whitespace-nowrap'>89.2<span className='text-2xl md:text-2xl'>%</span></p>
               </div>
             </div>
           </div>
@@ -471,9 +477,9 @@ export default function Home() {
         <section className='py-16 px-6 bg-[#fff9f0]'>
           <div className='space-y-8'>
             <div className='space-y-4'>
-              <h2 className='text-4xl font-bold'>
-                休みも収入も仲間も、<br />
-                妥協しない働き方を。
+              <h2 className='text-[2.0rem] md:text-4xl font-bold leading-tight'>
+                <div className='whitespace-pre-line'>休みも収入も仲間も、<br />
+                妥協しない働き方を。</div>
               </h2>
               <p className='text-lg text-gray-600'>
                 少しでも興味が湧いた方は以下のフォームよりお問い合わせください。<br />
