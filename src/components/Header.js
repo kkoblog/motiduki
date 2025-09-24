@@ -9,11 +9,11 @@ export default function Header() {
           {/* ロゴ */}
           <Link href="/" className="block">
             <Image
-              src="/toplogo.jpg"
-              alt="u-topia"
-              width={200}
-              height={160}
-              className="h-8 w-auto"
+              src="/toplogo.png"
+              alt="u-topia" 
+              width={300}
+              height={240}
+              className="h-12 w-auto"
             />
           </Link>
           {/* コンセプト */}

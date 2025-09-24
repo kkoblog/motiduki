@@ -5,19 +5,121 @@ export default function Home() {
   return (
     <div className='min-h-screen'>
       <main className='pt-14'>
-        <div className='w-full'>
-        <Image
-            src='/top.png'
+        <div className="relative">
+          <Image
+            src='/top2.png'
             alt='スタッフが輝き、成長し、長く働き続けられるサロン'
             width={430}
             height={600}
             className='w-full'
-          priority
-        />
+            priority
+          />
+          {/* スライドショー */}
+          <div className="absolute -top-[3%] left-0 right-0 h-[500px] flex gap-4 overflow-hidden px-4">
+            <div className="flex gap-8 animate-slide items-center h-full">
+              {/* 最初のセット */}
+              <div className="flex-none w-[280px] h-[350px] rounded-b-[140px] rounded-t-[0px] overflow-hidden transform -translate-y-4 shadow-xl hover:scale-105 transition-transform">
+                <Image
+                  src="/kari.png"
+                  alt="スタッフ1"
+                  width={280}
+                  height={350}
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
+              <div className="flex-none w-[280px] h-[350px] rounded-b-[140px] rounded-t-[0px] overflow-hidden transform translate-y-4 shadow-xl hover:scale-105 transition-transform">
+                <Image
+                  src="/kari2.png"
+                  alt="スタッフ2"
+                  width={280}
+                  height={350}
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
+              <div className="flex-none w-[280px] h-[350px] rounded-b-[140px] rounded-t-[0px] overflow-hidden transform -translate-y-4 shadow-xl hover:scale-105 transition-transform">
+                <Image
+                  src="/kari3.png"
+                  alt="スタッフ3"
+                  width={280}
+                  height={350}
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
+              <div className="flex-none w-[280px] h-[350px] rounded-b-[140px] rounded-t-[0px] overflow-hidden transform translate-y-4 shadow-xl hover:scale-105 transition-transform">
+                <Image
+                  src="/kari4.png"
+                  alt="スタッフ4"
+                  width={280}
+                  height={350}
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
+              <div className="flex-none w-[280px] h-[350px] rounded-b-[140px] rounded-t-[0px] overflow-hidden transform -translate-y-4 shadow-xl hover:scale-105 transition-transform">
+                <Image
+                  src="/kari5.png"
+                  alt="スタッフ5"
+                  width={280}
+                  height={350}
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
+              {/* 無限ループのために同じ画像を繰り返し */}
+              <div className="flex-none w-[280px] h-[350px] rounded-b-[140px] rounded-t-[0px] overflow-hidden transform -translate-y-4 shadow-xl hover:scale-105 transition-transform">
+                <Image
+                  src="/kari.png"
+                  alt="スタッフ1"
+                  width={280}
+                  height={350}
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
+              <div className="flex-none w-[280px] h-[350px] rounded-b-[140px] rounded-t-[0px] overflow-hidden transform translate-y-4 shadow-xl hover:scale-105 transition-transform">
+                <Image
+                  src="/kari2.png"
+                  alt="スタッフ2"
+                  width={280}
+                  height={350}
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
+              <div className="flex-none w-[280px] h-[350px] rounded-b-[140px] rounded-t-[0px] overflow-hidden transform -translate-y-4 shadow-xl hover:scale-105 transition-transform">
+                <Image
+                  src="/kari3.png"
+                  alt="スタッフ3"
+                  width={280}
+                  height={350}
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
+              <div className="flex-none w-[280px] h-[350px] rounded-b-[140px] rounded-t-[0px] overflow-hidden transform translate-y-4 shadow-xl hover:scale-105 transition-transform">
+                <Image
+                  src="/kari4.png"
+                  alt="スタッフ4"
+                  width={280}
+                  height={350}
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
+              <div className="flex-none w-[280px] h-[350px] rounded-b-[140px] rounded-t-[0px] overflow-hidden transform -translate-y-4 shadow-xl hover:scale-105 transition-transform">
+                <Image
+                  src="/kari5.png"
+                  alt="スタッフ5"
+                  width={280}
+                  height={350}
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
+            </div>
+          </div>
+          <a
+            href="#contact"
+            className="absolute bottom-[10%] left-1/2 transform -translate-x-1/2 w-[60%] h-[10%] cursor-pointer z-10 bg-transparent"
+            aria-label="まずは話を聞いてみる"
+          />
         </div>
 
         {/* 悩みの代弁セクション */}
-        <section className='bg-[#ffa500] text-white py-12 px-6'>
+        <section className='bg-[#fff9f0] text-gray-800 py-12 px-6'>
           <div className='space-y-8'>
             {/* チェックリスト */}
             <div className='space-y-4'>
@@ -69,7 +171,7 @@ export default function Home() {
 
             {/* 解決セクション */}
             <div className='space-y-6 pt-8'>
-              <h2 className='text-3xl font-black text-white text-left'>U-topiaなら</h2>
+              <h2 className='text-3xl font-black text-gray-800 text-left'>U-topiaなら</h2>
               <div className='space-y-4'>
                 <div className='inline-block'>
                   <p className='text-xl text-white font-black bg-gradient-to-r from-[#ff8c00] to-[#ffa500] p-4 shadow-lg border border-white/20 transform hover:scale-[1.02] transition-transform duration-200'>最短3ヶ月でデビュー可能！</p>
@@ -96,7 +198,7 @@ export default function Home() {
 
         {/* セクション間の画像 */}
         <div className='relative w-full h-[300px] -mt-8'>
-          <Image
+            <Image
             src='/test1.png'
             alt='明るく活気のあるサロンの様子'
             fill
@@ -203,34 +305,46 @@ export default function Home() {
 
             {/* 画像グリッド */}
             <div className='grid grid-cols-2 gap-4 pt-4'>
-              <Image
-                src='/event1.jpg'
-                alt='社内イベントの様子1'
-                width={200}
-                height={150}
-                className='rounded-lg w-full h-[150px] object-cover'
-              />
-          <Image
-                src='/event2.jpg'
-                alt='社内イベントの様子2'
-                width={200}
-                height={150}
-                className='rounded-lg w-full h-[150px] object-cover'
-              />
-          <Image
-                src='/event3.jpg'
-                alt='社内イベントの様子3'
-                width={200}
-                height={150}
-                className='rounded-lg w-full h-[150px] object-cover'
-              />
-          <Image
-                src='/event4.jpg'
-                alt='社内イベントの様子4'
-                width={200}
-                height={150}
-                className='rounded-lg w-full h-[150px] object-cover'
-              />
+              <div className="space-y-1">
+                <Image
+                  src='/syanai1.JPG'
+                  alt='バーベキューの様子'
+                  width={200}
+                  height={150}
+                  className='rounded-lg w-full h-[150px] object-cover'
+                />
+                <p className="text-white text-xs text-center">バーベキュー</p>
+              </div>
+              <div className="space-y-1">
+                <Image
+                  src='/syanai2.JPG'
+                  alt='忘年会の様子'
+                  width={200}
+                  height={150}
+                  className='rounded-lg w-full h-[150px] object-cover'
+                />
+                <p className="text-white text-xs text-center">忘年会</p>
+              </div>
+              <div className="space-y-1">
+                <Image
+                  src='/syanai3.JPG'
+                  alt='政策発表会の様子'
+                  width={200}
+                  height={150}
+                  className='rounded-lg w-full h-[150px] object-cover'
+                />
+                <p className="text-white text-xs text-center">政策発表会</p>
+              </div>
+              <div className="space-y-1">
+                <Image
+                  src='/syanai4.JPG'
+                  alt='全国雑誌撮影の様子'
+                  width={200}
+                  height={150}
+                  className='rounded-lg w-full h-[150px] object-cover'
+                />
+                <p className="text-white text-xs text-center">全国雑誌撮影</p>
+              </div>
             </div>
 
             {/* 出典 */}
@@ -329,64 +443,106 @@ export default function Home() {
             
               <div className='grid grid-cols-2 gap-2 md:gap-4'>
               {/* 平均年齢 */}
-              <div className='bg-white shadow p-3 md:p-6 flex flex-col items-center aspect-square'>
+              <div className='bg-white shadow p-8 flex flex-col items-center w-[170px] h-[210px] md:w-[190px] md:h-[230px] mx-auto'>
                 <p className='text-gray-600 mb-2 text-sm md:text-base'>平均年齢</p>
                 <div className='flex-1 flex items-center justify-center'>
-                  <UserGroupIcon className='w-8 h-8 md:w-12 md:h-12 text-[#ffa500]' />
+                  <Image
+                    src='/13122.png'
+                    alt='会話するアイコン'
+                    width={64}
+                    height={64}
+                    className='w-16 h-12 md:w-16 md:h-16'
+                  />
                 </div>
                 <p className='text-3xl md:text-4xl font-bold text-center whitespace-nowrap'>24.3<span className='text-2xl md:text-2xl'>歳</span></p>
               </div>
 
               {/* 平均月収 */}
-              <div className='bg-white shadow p-3 md:p-6 flex flex-col items-center aspect-square'>
+              <div className='bg-white shadow p-8 flex flex-col items-center w-[170px] h-[210px] md:w-[190px] md:h-[230px] mx-auto'>
                 <p className='text-gray-600 mb-2 text-sm md:text-base'>平均月収</p>
                 <div className='flex-1 flex items-center justify-center'>
-                  <CurrencyYenIcon className='w-8 h-8 md:w-12 md:h-12 text-[#ffa500]' />
+                <Image
+                    src='/1330.png'
+                    alt='お金アイコン'
+                    width={64}
+                    height={64}
+                    className='w-16 h-12 md:w-16 md:h-16'
+                  />
                 </div>
                 <p className='text-3xl md:text-4xl font-bold whitespace-nowrap'>約40<span className='text-2xl md:text-2xl'>万円</span></p>
               </div>
 
               {/* デビュー初月の売上平均 */}
-              <div className='bg-white shadow p-3 md:p-6 flex flex-col items-center aspect-square'>
+              <div className='bg-white shadow p-8 flex flex-col items-center w-[170px] h-[210px] md:w-[190px] md:h-[230px] mx-auto'>
                 <p className='text-gray-600 mb-2 text-sm md:text-base'>デビュー初月の売上平均</p>
                 <div className='flex-1 flex items-center justify-center'>
-                  <SparklesIcon className='w-8 h-8 md:w-12 md:h-12 text-[#ffa500]' />
+                <Image
+                    src='/9226.png'
+                    alt='平均アイコン'
+                    width={64}
+                    height={64}
+                    className='w-16 h-12 md:w-16 md:h-16'
+                  />
                 </div>
                 <p className='text-3xl md:text-4xl font-bold whitespace-nowrap'>約62<span className='text-2xl md:text-2xl'>万円</span></p>
               </div>
 
               {/* デビューまでの平均期間 */}
-              <div className='bg-white shadow p-3 md:p-6 flex flex-col items-center aspect-square'>
+              <div className='bg-white shadow p-8 flex flex-col items-center w-[170px] h-[210px] md:w-[190px] md:h-[230px] mx-auto'>
                 <p className='text-gray-600 mb-2 text-sm md:text-base'>デビューまでの平均期間</p>
                 <div className='flex-1 flex items-center justify-center'>
-                  <CalendarIcon className='w-8 h-8 md:w-12 md:h-12 text-[#ffa500]' />
+                <Image
+                    src='/25935.png'
+                    alt='デビューまでの平均期間アイコン'
+                    width={64}
+                    height={64}
+                    className='w-16 h-12 md:w-16 md:h-16'
+                  />
                 </div>
                 <p className='text-3xl md:text-4xl font-bold whitespace-nowrap'>6.5<span className='text-2xl md:text-2xl'>ヶ月</span></p>
               </div>
 
               {/* デビュー月の平均新規入客数 */}
-              <div className='bg-white shadow p-3 md:p-6 flex flex-col items-center aspect-square'>
-                <p className='text-gray-600 mb-2 text-sm md:text-base'>デビュー月の平均新規入客数</p>
+              <div className='bg-white shadow p-8 flex flex-col items-center w-[170px] h-[210px] md:w-[190px] md:h-[230px] mx-auto'>
+                <p className='text-gray-600 mb-2 text-sm md:text-base'>デビュー月の<br />平均新規入客数</p>
                 <div className='flex-1 flex items-center justify-center'>
-                  <UserIcon className='w-8 h-8 md:w-12 md:h-12 text-[#ffa500] stroke-2' />
+                <Image
+                    src='/1200.png'
+                    alt='デビュー月の平均新規入客数アイコン'
+                    width={64}
+                    height={64}
+                    className='w-12 h-16 md:w-16 md:h-16'
+                  />
                 </div>
                 <p className='text-3xl md:text-4xl font-bold whitespace-nowrap'>74<span className='text-2xl md:text-2xl'>名</span></p>
               </div>
 
               {/* 有給取得率 */}
-              <div className='bg-white shadow p-3 md:p-6 flex flex-col items-center aspect-square'>
+              <div className='bg-white shadow p-8 flex flex-col items-center w-[170px] h-[210px] md:w-[190px] md:h-[230px] mx-auto'>
                 <p className='text-gray-600 mb-2 text-sm md:text-base'>有給取得率</p>
                 <div className='flex-1 flex items-center justify-center'>
-                  <BeakerIcon className='w-8 h-8 md:w-12 md:h-12 text-[#ffa500]' />
+          <Image
+                    src='/16744.png'
+                    alt='有給取得率アイコン'
+                    width={64}
+                    height={64}
+                    className='w-12 h-16 md:w-16 md:h-16'
+                  />
                 </div>
                 <p className='text-3xl md:text-4xl font-bold whitespace-nowrap'>100<span className='text-2xl md:text-2xl'>%</span></p>
               </div>
 
               {/* 社内イベントの参加率 */}
-              <div className='bg-white shadow p-3 md:p-6 flex flex-col items-center aspect-square'>
+              <div className='bg-white shadow p-8 flex flex-col items-center w-[170px] h-[210px] md:w-[190px] md:h-[230px] mx-auto'>
                 <p className='text-gray-600 mb-2 text-sm md:text-base'>社内イベントの参加率</p>
                 <div className='flex-1 flex items-center justify-center'>
-                  <FaceSmileIcon className='w-8 h-8 md:w-12 md:h-12 text-[#ffa500]' />
+          <Image
+                     src='/8292.png'
+                     alt='社内イベントの参加率アイコン'
+                     width={64}
+                     height={64}
+                     className='w-16 h-12 md:w-16 md:h-16'
+                   />
                 </div>
                 <p className='text-3xl md:text-4xl font-bold whitespace-nowrap'>89.2<span className='text-2xl md:text-2xl'>%</span></p>
               </div>
@@ -474,7 +630,7 @@ export default function Home() {
         </section>
 
         {/* お問い合わせセクション */}
-        <section className='py-16 px-6 bg-[#fff9f0]'>
+        <section id="contact" className='py-16 px-6 bg-[#fff9f0]'>
           <div className='space-y-8'>
             <div className='space-y-4'>
               <h2 className='text-[2.0rem] md:text-4xl font-bold leading-tight'>
@@ -482,58 +638,55 @@ export default function Home() {
                 妥協しない働き方を。</div>
               </h2>
               <p className='text-lg text-gray-600'>
-                少しでも興味が湧いた方は以下のフォームよりお問い合わせください。<br />
-                まだ応募するのは…という方でも大丈夫！<br />
-                気軽にご質問ください。
+                話を聞いてみたい方は、まずは下のLINEから！<br />
+                カジュアルな相談・見学だけでもOKです。<br />
+                あなたの気になることを何でも聞かせてください。
               </p>
             </div>
 
-            <form className='space-y-6'>
-              <div className='space-y-4'>
-                <select className='w-full p-4 rounded-lg bg-white border border-gray-200' defaultValue=''>
-                  <option value='' disabled>希望職種</option>
-                  <option value='stylist'>スタイリスト</option>
-                  <option value='assistant'>アシスタント</option>
-                </select>
-
-                <select className='w-full p-4 rounded-lg bg-white border border-gray-200' defaultValue=''>
-                  <option value='' disabled>希望店舗</option>
-                  <option value='shibuya'>渋谷店</option>
-                  <option value='shinjuku'>新宿店</option>
-                </select>
-
-                <input
-                  type='text'
-                  placeholder='お名前'
-                  className='w-full p-4 rounded-lg bg-white border border-gray-200'
-                />
-
-                <input
-                  type='email'
-                  placeholder='メールアドレス'
-                  className='w-full p-4 rounded-lg bg-white border border-gray-200'
-                />
-
-                <input
-                  type='tel'
-                  placeholder='電話番号'
-                  className='w-full p-4 rounded-lg bg-white border border-gray-200'
-                />
-
-                <textarea
-                  placeholder='メッセージ'
-                  rows='5'
-                  className='w-full p-4 rounded-lg bg-white border border-gray-200'
-                ></textarea>
+            <a
+              href="https://lin.ee/xTIlpCKO"
+          target="_blank"
+          rel="noopener noreferrer"
+              className="block w-full max-w-md mx-auto bg-[#00B900] text-white py-4 px-6 rounded-full text-xl font-bold hover:opacity-90 transition-opacity text-center shadow-lg"
+            >
+              <div className="flex items-center justify-center space-x-3">
+                <svg className="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM13 17H11V15H13V17ZM13 13H11V7H13V13Z"/>
+                </svg>
+                <span>公式LINEで相談する</span>
               </div>
+            </a>
+          </div>
+        </section>
 
-              <button
-                type='submit'
-                className='w-full bg-[#ffa500] text-white py-4 px-6 rounded-full text-xl font-medium hover:bg-[#FF6B6B] transition-colors'
-              >
-                問い合わせを送信する
-              </button>
-            </form>
+        {/* 店舗情報セクション */}
+        <section className="py-12 px-6 bg-white">
+          <div className="max-w-3xl mx-auto space-y-8">
+            <div className="space-y-4">
+              <h3 className="text-2xl font-bold text-[#FF7F50]">U-topia</h3>
+              <div className="space-y-2 text-gray-700">
+                <p>東京都町田市原町田６－１７－１</p>
+                <p>藤ビル３０２</p>
+                <p className="pt-2">
+                  <span className="font-medium">TEL</span>{" "}
+                  <a href="tel:042-794-6747" className="text-[#FF7F50] hover:underline">
+                    042-794-6747
+                  </a>
+                </p>
+              </div>
+            </div>
+
+            <div className="w-full aspect-video">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3246.35458338666!2d139.44467797593373!3d35.54494408744851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f94cb61e108d%3A0xc02f5be053d666d9!2sU-topia!5e0!3m2!1sja!2sjp!4v1758601734717!5m2!1sja!2sjp" 
+                className="w-full h-full"
+                style={{ border: 0 }} 
+                allowFullScreen 
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            </div>
           </div>
         </section>
       </main>
