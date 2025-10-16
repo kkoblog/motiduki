@@ -20,7 +20,7 @@ export default function Home() {
               {/* 最初のセット */}
               <div className="flex-none w-[280px] h-[350px] rounded-b-[140px] rounded-t-[0px] overflow-hidden transform -translate-y-4 shadow-xl hover:scale-105 transition-transform">
                 <Image
-                  src="/kari.png"
+                  src="/maintop1.jpg"
                   alt="スタッフ1"
                   width={280}
                   height={350}
@@ -29,7 +29,7 @@ export default function Home() {
               </div>
               <div className="flex-none w-[280px] h-[350px] rounded-b-[140px] rounded-t-[0px] overflow-hidden transform translate-y-4 shadow-xl hover:scale-105 transition-transform">
                 <Image
-                  src="/kari2.png"
+                  src="/staff5.jpg"
                   alt="スタッフ2"
                   width={280}
                   height={350}
@@ -38,7 +38,7 @@ export default function Home() {
               </div>
               <div className="flex-none w-[280px] h-[350px] rounded-b-[140px] rounded-t-[0px] overflow-hidden transform -translate-y-4 shadow-xl hover:scale-105 transition-transform">
                 <Image
-                  src="/kari3.png"
+                  src="/staff4.jpg"
                   alt="スタッフ3"
                   width={280}
                   height={350}
@@ -47,7 +47,7 @@ export default function Home() {
               </div>
               <div className="flex-none w-[280px] h-[350px] rounded-b-[140px] rounded-t-[0px] overflow-hidden transform translate-y-4 shadow-xl hover:scale-105 transition-transform">
                 <Image
-                  src="/kari4.png"
+                  src="/maintop2.jpg"
                   alt="スタッフ4"
                   width={280}
                   height={350}
@@ -56,7 +56,7 @@ export default function Home() {
               </div>
               <div className="flex-none w-[280px] h-[350px] rounded-b-[140px] rounded-t-[0px] overflow-hidden transform -translate-y-4 shadow-xl hover:scale-105 transition-transform">
                 <Image
-                  src="/kari5.png"
+                  src="/maintop3.jpg"
                   alt="スタッフ5"
                   width={280}
                   height={350}
@@ -66,7 +66,7 @@ export default function Home() {
               {/* 無限ループのために同じ画像を繰り返し */}
               <div className="flex-none w-[280px] h-[350px] rounded-b-[140px] rounded-t-[0px] overflow-hidden transform -translate-y-4 shadow-xl hover:scale-105 transition-transform">
                 <Image
-                  src="/kari.png"
+                  src="/maintop1.jpg"
                   alt="スタッフ1"
                   width={280}
                   height={350}
@@ -75,7 +75,7 @@ export default function Home() {
               </div>
               <div className="flex-none w-[280px] h-[350px] rounded-b-[140px] rounded-t-[0px] overflow-hidden transform translate-y-4 shadow-xl hover:scale-105 transition-transform">
                 <Image
-                  src="/kari2.png"
+                  src="/staff5.jpg"
                   alt="スタッフ2"
                   width={280}
                   height={350}
@@ -84,7 +84,7 @@ export default function Home() {
               </div>
               <div className="flex-none w-[280px] h-[350px] rounded-b-[140px] rounded-t-[0px] overflow-hidden transform -translate-y-4 shadow-xl hover:scale-105 transition-transform">
                 <Image
-                  src="/kari3.png"
+                  src="/staff4.jpg"
                   alt="スタッフ3"
                   width={280}
                   height={350}
@@ -93,7 +93,7 @@ export default function Home() {
               </div>
               <div className="flex-none w-[280px] h-[350px] rounded-b-[140px] rounded-t-[0px] overflow-hidden transform translate-y-4 shadow-xl hover:scale-105 transition-transform">
                 <Image
-                  src="/kari4.png"
+                  src="/maintop2.jpg"
                   alt="スタッフ4"
                   width={280}
                   height={350}
@@ -102,7 +102,7 @@ export default function Home() {
               </div>
               <div className="flex-none w-[280px] h-[350px] rounded-b-[140px] rounded-t-[0px] overflow-hidden transform -translate-y-4 shadow-xl hover:scale-105 transition-transform">
                 <Image
-                  src="/kari5.png"
+                  src="/maintop3.jpg"
                   alt="スタッフ5"
                   width={280}
                   height={350}
@@ -199,7 +199,7 @@ export default function Home() {
         {/* セクション間の画像 */}
         <div className='relative w-full h-[300px] -mt-8'>
             <Image
-            src='/test1.png'
+            src='/topzenin.jpg'
             alt='明るく活気のあるサロンの様子'
             fill
             className='object-cover'
