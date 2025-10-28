@@ -4,7 +4,7 @@ import { UserGroupIcon, CurrencyYenIcon, SparklesIcon, CalendarIcon, UserIcon, B
 export default function Home() {
   return (
     <div className='min-h-screen'>
-      <main className='pt-14'>
+      <main className='pt-16'>
         <div className="relative">
           <Image
             src='/top2.png'
@@ -307,7 +307,7 @@ export default function Home() {
             <div className='grid grid-cols-2 gap-4 pt-4'>
               <div className="space-y-1">
                 <Image
-                  src='/syanai1.JPG'
+                  src='/syanai1-2.png'
                   alt='バーベキューの様子'
                   width={200}
                   height={150}
@@ -415,12 +415,14 @@ export default function Home() {
             <div className='space-y-6'>
               <div className='bg-gradient-to-br from-white to-white/95 p-6 rounded-2xl shadow-xl border border-white/30 backdrop-blur-sm transform hover:scale-[1.02] transition-all duration-300'>
                 <p className='text-[#ff8c00] text-2xl font-black mb-4 tracking-wide'>完全週休二日</p>
-                <p className='text-gray-700 leading-relaxed'>規定売上をクリアすれば、公休を4日まで追加OK。<br />働いた分だけ&apos;まるっと休める&apos;仕組み。</p>
+                <p className='text-gray-700 leading-relaxed'>早番遅番制度を設けています。<br />早番9時〜18時・遅番11時〜20時。<br />自分の時間を確保しやすい働き方です。</p>
               </div>
+
+
 
               <div className='bg-gradient-to-br from-white to-white/95 p-6 rounded-2xl shadow-xl border border-white/30 backdrop-blur-sm transform hover:scale-[1.02] transition-all duration-300'>
                 <p className='text-[#ff8c00] text-2xl font-black mb-4 tracking-wide'>有給完全法遵通り</p>
-                <p className='text-gray-700 leading-relaxed'>休暇1日を「午前休+午後休」の2枠に分割できる制度。<br />役所手続きや通院、子どもの学校行事など&apos;半日で済む用事&apos;にちょうどいい柔軟さです。</p>
+                <p className='text-gray-700 leading-relaxed'>U-topiaでは、計画的有給付与を採用しています。<br />12/31〜1/3までの4日間は有給として消化し、その他の有給は好きなところで有給を消化していただきます。</p>
               </div>
 
               <div className='bg-gradient-to-br from-white to-white/95 p-6 rounded-2xl shadow-xl border border-white/30 backdrop-blur-sm transform hover:scale-[1.02] transition-all duration-300'>
@@ -430,7 +432,7 @@ export default function Home() {
 
               <div className='bg-gradient-to-br from-white to-white/95 p-6 rounded-2xl shadow-xl border border-white/30 backdrop-blur-sm transform hover:scale-[1.02] transition-all duration-300'>
                 <p className='text-[#ff8c00] text-2xl font-black mb-4 tracking-wide'>土日も休める</p>
-                <p className='text-gray-700 leading-relaxed'>月の公休は6〜10日、1日の勤務時間は6〜8時間の中から自由に設定可能。<br />ほかの働き方をご希望の場合も、遠慮なくご相談ください。</p>
+                <p className='text-gray-700 leading-relaxed'>U-topiaでは、月に2日希望休が取れるので土日に公休を充てることも可能。<br />ママさん美容師も働けるよう、時短勤務でのパートも可能です。</p>
               </div>
             </div>
           </div>
@@ -544,7 +546,7 @@ export default function Home() {
                      className='w-16 h-12 md:w-16 md:h-16'
                    />
                 </div>
-                <p className='text-3xl md:text-4xl font-bold whitespace-nowrap'>89.2<span className='text-2xl md:text-2xl'>%</span></p>
+                <p className='text-3xl md:text-4xl font-bold whitespace-nowrap'>96.9<span className='text-2xl md:text-2xl'>%</span></p>
               </div>
             </div>
           </div>
@@ -573,7 +575,7 @@ export default function Home() {
                 </div>
                 <div className='bg-white rounded-lg p-6'>
                   <p className='text-gray-700'>
-                    毎月の社内イベントには89.2%が参加し、スタッフ同士の距離が近いのが特徴。シャンプーや施術の合間に先輩が自然と声を掛け合う文化があり、疑問をその場で解決できます。また、苦手分野に合わせた個別カリキュラムが用意されているので、置き去り感ゼロ。
+                    毎月の社内イベントには96.9%が参加し、スタッフ同士の距離が近いのが特徴。シャンプーや施術の合間に先輩が自然と声を掛け合う文化があり、疑問をその場で解決できます。また、苦手分野に合わせた個別カリキュラムが用意されているので、置き去り感ゼロ。
                   </p>
                 </div>
               </div>
@@ -674,6 +676,62 @@ export default function Home() {
                     042-794-6747
                   </a>
                 </p>
+                
+                {/* SNSリンク */}
+                <div className="pt-4 space-y-3">
+                  
+                  <div className="flex flex-col gap-3">
+                    {/* TikTokアカウント */}
+                    <a
+                      href="https://www.tiktok.com/@utopia_moti1015"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-3 p-3 bg-gradient-to-r from-gray-900 to-gray-800 text-white rounded-lg hover:scale-105 transition-all duration-300 shadow-md hover:shadow-lg"
+                    >
+                      <div className="bg-white rounded-full p-2 flex items-center justify-center">
+                        <svg
+                          className="w-5 h-5 text-black"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                        >
+                          <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1-.1z"/>
+                        </svg>
+                      </div>
+                      <div className="flex-1">
+                        <p className="font-medium text-sm">TikTokアカウント</p>
+                        <p className="text-xs text-white/80">@utopia_moti1015</p>
+                      </div>
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </a>
+
+                    {/* 採用担当者Instagram */}
+                    <a
+                      href="https://www.instagram.com/utopia_yushi/?igsh=MWI2cHdpd3o4OGk4&utm_source=qr"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-3 p-3 bg-gradient-to-br from-purple-600 via-pink-500 to-orange-400 text-white rounded-lg hover:scale-105 transition-all duration-300 shadow-md hover:shadow-lg"
+                    >
+                      <div className="bg-white rounded-full p-2 flex items-center justify-center">
+                        <svg
+                          className="w-5 h-5 text-pink-500"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                        >
+                          <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                      </div>
+                      <div className="flex-1">
+                        <p className="font-medium text-sm">採用担当者Instagram</p>
+                        <p className="text-xs text-white/90">@utopia_yushi</p>
+                      </div>
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
 

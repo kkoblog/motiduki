@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "u-topia | 美容室",
-  description: "あなたの理想の美しさを実現する美容室",
+  title: "u-topia | 東京都町田市原町田の美容室",
+  description: "スタッフが輝き、成長し、長く働き続けられるサロン",
 };
 
 export default function RootLayout({ children }) {
